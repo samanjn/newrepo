@@ -33,3 +33,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/myapp:latest
+          cahche-from: type=gha
+          cache-to: type=gha,mode=max
