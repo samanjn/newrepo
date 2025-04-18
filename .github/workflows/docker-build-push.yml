@@ -11,9 +11,6 @@ jobs:
     services:
       docker:
         image: docker:20.10-dind
-        options: --privileged --tmpfs /var/lib/docker
-        ports:
-          - 2375:2375
 
     steps:
       # Checkout your repo
