@@ -10,7 +10,7 @@ jobs:
     runs-on: test
     services:
       docker:
-        image: docker:20.10-dind
+        image: docker:20.10
 
     steps:
       # Checkout your repo
